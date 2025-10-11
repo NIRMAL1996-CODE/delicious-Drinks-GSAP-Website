@@ -1,6 +1,25 @@
-import React from 'react'
+import{useGSAP} from "@gsap/react";
+import gsap from "gsap";
+import { SplitText } from "gsap/all";
 
 const HeroSection = () => {
+  useGSAP(()=>{
+    const titleSplit =SplitText.create(".hero-title", {
+      type: "chars",
+    })
+    const tl= gsap.timeline({
+      delay:1,
+    });
+    tl.to(".hero-content",{
+      opacity:1, 
+      y:0,
+      ease:"power1.inOut",
+    }).to(".hero-text-scroll", {
+      duration: 1,
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      ease:"circ.out",
+    })
+  })
   return (
     <div>
       <section className='bg-main-bg'>
