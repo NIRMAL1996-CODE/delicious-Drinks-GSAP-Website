@@ -1,6 +1,7 @@
 import{useGSAP} from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
+gsap.registerPlugin(SplitText);
 
 const HeroSection = () => {
   useGSAP(()=>{
@@ -18,7 +19,7 @@ const HeroSection = () => {
       duration: 1,
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
       ease:"circ.out",
-    })
+    }, "-=0.6");
   })
   return (
     <div>
@@ -26,7 +27,7 @@ const HeroSection = () => {
         <div className='hero-container'>
            <img className='absolute bottom-0 left-1/2 -translate-x-1/2 object-auto scale-100 md:scale-150' src="/images/static-img.png" alt="static-img" />
 
-           <div className='hero-content'>
+           <div className='hero-content opacity-0'>
 
               <div className='overflow-hidden'>
                 <h1 className='hero-title'>Freaking Delicious</h1>
