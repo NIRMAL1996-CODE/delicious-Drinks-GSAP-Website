@@ -46,7 +46,7 @@ const FlavourTitle = () => {
         <h1>We have 6</h1>
       </div>
 
-      <div style={{}} className='flavor-text-scroll'>
+      <div style={{clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)",}} className='flavor-text-scroll'>
         <div className='bg-mid-brown pb-5 2xl:pt-0 pt-3 2xl:px-5 px-3'>
           <h2 className="text-milk">freaking</h2>
         </div>
