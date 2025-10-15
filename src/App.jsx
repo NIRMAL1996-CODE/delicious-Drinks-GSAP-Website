@@ -5,14 +5,16 @@ import gsap from 'gsap';
 import { ScrollTrigger,ScrollSmoother } from "gsap/all";
 // import { useGSAP } from '@gsap/react';
 import Messagesection from './sections/Messagesection';
+import Flavoursection from './sections/Flavoursection';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 const App = () => {
   return (
-    <div className="h-500">
+    <div>
       <Navbar/>
       <HeroSection/>
       <Messagesection/>
+      <Flavoursection/>
     </div>
   )
 }

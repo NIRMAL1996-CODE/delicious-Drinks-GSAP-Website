@@ -47,7 +47,7 @@ const Messagesection = () => {
       },
     });
     revealTl.to(".msg-text-scroll", {
-      duration: 1,
+      duration: 0.6,
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
       ease: "circ.inOut",
     });
