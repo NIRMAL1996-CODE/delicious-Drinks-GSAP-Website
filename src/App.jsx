@@ -8,13 +8,8 @@ import Messagesection from './sections/Messagesection';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 const App = () => {
-  //   useGSAP(() => {
-  //     ScrollSmoother.create({
-  //     smooth: 3,
-  //     effects: true,});
-  // });
   return (
-    <div>
+    <div className="h-500">
       <Navbar/>
       <HeroSection/>
       <Messagesection/>
