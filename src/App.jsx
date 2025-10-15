@@ -3,19 +3,21 @@ import Navbar from './components/Navbar';
 import HeroSection from './sections/HeroSection';
 import gsap from 'gsap';
 import { ScrollTrigger,ScrollSmoother } from "gsap/all";
-import { useGSAP } from '@gsap/react';
+// import { useGSAP } from '@gsap/react';
+import Messagesection from './sections/Messagesection';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 const App = () => {
-    useGSAP(() => {
-      ScrollSmoother.create({
-      smooth: 3,
-      effects: true,});
-  });
+  //   useGSAP(() => {
+  //     ScrollSmoother.create({
+  //     smooth: 3,
+  //     effects: true,});
+  // });
   return (
     <div>
       <Navbar/>
       <HeroSection/>
+      <Messagesection/>
     </div>
   )
 }
